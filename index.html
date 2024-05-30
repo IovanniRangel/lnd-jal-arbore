@@ -33,7 +33,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
     <style>
         :root {
-            --blue: #0166c3;
+            --blue: #313a41;
+            --white: #fff;
+            --cream: #c9a97d !important;
         }
         *{
     font-family: 'Poppins', sans-serif !important;
@@ -45,7 +47,7 @@
         }
 
         .card-tipo .card-caption .cc-inner .tag {
-            background-color: #c30c1c;
+            background-color: #313e48;
         }
 
         .tipo-hogar .contw .title-s1,
@@ -61,16 +63,16 @@
 
         .btn.btn-solid,
         .tipo-hogar .filtro-cont .btn-solid.btn {
-            background: var(--blue);
+            background: var(--white);
         }
 
         .btn.btn-solid:focus,
         .btn.btn-solid:hover {
-            background: var(--blue);
+            background: var(--white);
         }
 
         .main-footer {
-            background: #1e1e1e;
+            background: #32393e;
             padding: 30px 0;
             position: relative;
             z-index: 100;
@@ -83,7 +85,7 @@
         .bg-gradient:before {
             position: absolute;
             background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-            background: linear-gradient(to bottom, rgb(0 6 96 / 57%) 25%, rgb(0 39 77 / 83%) 75%);
+            background: linear-gradient(to bottom, rgb(51 51 51 / 30%) 25%, rgb(50 56 60) 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
             content: " ";
             height: 100%;
@@ -214,12 +216,13 @@
         }
 
         .formulario form .form-group .input-group .input-group-text {
-            background-color: #031b57;
+            background-color: #1b2731;
             border-color: var(--blue);
+            color: var(--white);
         }
 
         button#submitForm {
-            background: #030d4e;
+            background: var(--cream);
         }
 
         .formulario {
@@ -227,7 +230,7 @@
         }
 
         .contacto::before {
-            background-color: #030d4e;
+            background-color: #fff;
         }
 
         .contacto .contw .info .azul.lead strong,
@@ -278,7 +281,7 @@
         }
 
         .formulario h2 {
-            color: #10e9ff;
+            color: var(--white);
             font-weight: 600;
         }
 
@@ -409,6 +412,16 @@
     height: auto;
     object-fit: unset
 }
+
+.btn.btn-solid,.tipo-hogar .filtro-cont .btn-solid.btn{
+    color: var(--blue);
+}
+.crema{
+    color: var(--cream) !important;
+}
+.titulo-azul{
+    color: var(--blue) !important;
+}
     </style>
 
 
@@ -429,7 +442,7 @@
                 </picture>
             </div>
             <div class="nav-cont">
-                <img width="150" src="assets/images/logo-arbore.png" alt="">
+                <img width="150" src="assets/images/logo-arbore-color.png" alt="">
                 <!-- <nav>
                     <ul>
                         <li><a href="#tipos">Desarrollos</a></li>
@@ -567,7 +580,7 @@
                             </div>
                             <div class="card-caption">
                                 <div class="cc-inner"><span class="tag">Casas</span>
-                                    <h3 class="cc-title">Modelo Blanc</h3><small>Casas con hasta:</small>
+                                    <h3 class="titulo-azul">Modelo Blanc</h3><small>Casas con hasta:</small>
                                     <ul class="cc-lista">
                                         <li><img loading="lazy" src="./assets/images/i-t-recamaras.svg" alt="Recámaras"
                                                 width="38" height="24"> <span>4</span></li>
@@ -597,7 +610,7 @@
                             </div>
                             <div class="card-caption">
                                 <div class="cc-inner"><span class="tag">Casas</span>
-                                    <h3 class="cc-title">Modelo Platino</h3><small>Casas con hasta:</small>
+                                    <h3 class="titulo-azul">Modelo Platino</h3><small>Casas con hasta:</small>
                                     <ul class="cc-lista">
                                         <li><img loading="lazy" src="./assets/images/i-t-recamaras.svg" alt="Recámaras"
                                                 width="38" height="24"> <span>4</span></li>
@@ -731,7 +744,8 @@
                 style="height: 555px; background-image: url('assets/images/bg.svg');">
                 <div class="titan-caption contw">
                     <div class="caption-content">
-                        <h2 class=" title-s1 aos-init aos-animate" data-aos="fade-up">Arbore Residencial: </h2>
+                        <img width="250" src="assets/images/logo-arbore-color.png" alt="">
+                        <!-- <h2 class=" title-s1 aos-init aos-animate crema" data-aos="fade-up">Arbore Residencial: </h2> -->
                         <p class="aos-init aos-animate" data-aos="fade-up">Tu nuevo estándar de vida. Un parque lineal de más de 8,500 mts2 rodeado de áreas verdes para juegos, correr y andar en bicicleta. Casas Inteligentes con una variedad de amenidades sociales que incluyen una casa club, una relajante alberca, áreas de juegos infantiles. Ubicación estratégica en Camino a San Isidro, con alta plusvalía.</p>
                         <!-- <a class="section-scroll btn btn-border-w btn-round" href="#">cONOCE MÁS</a> -->
                         <a href="#contacto" class="btn btn-solid btn-sm btn-modal">Estoy interesado <svg width="10"
@@ -739,7 +753,7 @@
                                 style="margin-top: -4px;">
                                 <path
                                     d="M11.1786 20.215L18.3335 12.6263L20 14.3938L10 25L9.16677 24.1162L0 14.3938L1.66647 12.6263L8.82145 20.215L8.82145 0L11.1786 0L11.1786 20.215Z"
-                                    fill="white"></path>
+                                    fill="#323a40"></path>
                             </svg></a>
                     </div>
                 </div>
@@ -765,7 +779,7 @@
                                         loading="lazy" src="./assets/images/galeria/santiago.jpg" alt="Cancún"
                                         width="522" height="426" class="img-fluid mx-auto d-block">
                                 </picture>
-                                <h4>Parque lineal</h4>
+                                <!-- <h4>Parque lineal</h4> -->
                                 <!-- <p>Una ciudad histórica y cultural que cuenta con un centro histórico bien conservado,
                                     así como con una variedad de museos, teatros y festivales.</p> -->
                             </div>
@@ -775,7 +789,7 @@
                                         loading="lazy" src="./assets/images/galeria/sanjuan.jpg" alt="Playa del Cármen"
                                         width="522" height="426" class="img-fluid mx-auto d-block">
                                 </picture>
-                                <h4>Casa club</h4>
+                                <!-- <h4>Casa club</h4> -->
                                 <!-- <p>Una ciudad industrial y comercial ubicada al norte de Querétaro, es un importante
                                     centro de producción de textiles y calzado.</p> -->
                             </div>
@@ -785,7 +799,7 @@
                                         loading="lazy" src="./assets/images/galeria/Tequisquiapan.jpg" alt="Tulum"
                                         width="522" height="426" class="img-fluid mx-auto d-block">
                                 </picture>
-                                <h4>Ingreso controlado</h4>
+                                <!-- <h4>Ingreso controlado</h4> -->
                                 <!-- <p>Un popular destino turístico ubicado al sur de Querétaro, es conocido por sus aguas
                                     termales, sus viñedos y su gastronomía.</p> -->
                             </div>
@@ -801,7 +815,7 @@
                 <div class="col-md-5 mb-4">
                     <div class="info">
                         <h5 class="title-sm">CONTÁCTANOS</h5>
-                        <h2 >
+                        <h2 class="titulo-azul">
                             ABRE LA PUERTA A UN NUEVO ESTÁNDAR DE VIDA
                         </h2>
                     </div>
@@ -850,7 +864,7 @@
                                 <div class="col-12">
                                     <div class="form-group mb-4"><label for="00N3l00000Q7A54">Ingresos desde:</label> <select name="00N3l00000Q7A54" id="00N3l00000Q7A54"
                                             class="form-control" required>
-                                            <option value>--Ninguno--</option>
+                                            <option value>-- Seleccionar rango --</option>
                                             <option value="50000-60000">$50,000 - $60,000</option>
                                             <option value="60000-70000">$60,000 - $70,000</option>
                                             <option value="70000-80000">$70,000 - $80,000</option>
@@ -900,7 +914,7 @@
                 height="195">
         </div> -->
     </div>
-    <footer class="main-footer">
+    <footer style="margin-top: 2rem;" class="main-footer">
         <div class="contw">
             <div class="row align-items-center">
                 <div class="col-12 col-sm-6">
